@@ -1,0 +1,41 @@
+// для каждого компонента нужно импортить переменные, чтобы их использовать
+@import "../main/parameters";
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 3.5rem;
+    }
+}
+
+.logo {
+    &__img {}
+}
+
+.links {
+    display: flex;
+
+    &__item {
+        margin-left: 1.8rem;
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: 1.4rem;
+        color: $c-text;
+        border-radius: 8px;
+        display: inline-block;
+        padding: 1.5rem 3rem;
+    }
+
+    &__link--invers {
+        color: #FFFFFF;
+        background-color: $c-text;
+    }
+}

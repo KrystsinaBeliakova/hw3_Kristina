@@ -1,0 +1,65 @@
+@import "../main/parameters";
+
+.features {
+    padding-top: 10rem;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5.65rem;
+    }
+
+    &__column {
+        max-width: 33.33%;
+    }
+
+}
+
+.feature {
+    max-width: 296px;
+
+    &__img {
+        margin-bottom: 2.9rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 1.3;
+        /* identical to box height, or 130% */
+        letter-spacing: 0.2px;
+        color: $c-text;
+        margin-bottom: 1.2rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        /* or 150% */
+        color: $c-text2;
+    }
+
+}
+
+@media screen and (max-width: $md) {
+    .features {
+        &__row {
+            justify-content: space-around;
+        }
+
+        &__column {
+            max-width: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .feature {
+        &__title {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+
