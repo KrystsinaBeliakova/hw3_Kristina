@@ -324,11 +324,11 @@ button {
     right: -4.8vw;
     max-width: 58.5vw; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .main-section__img {
     right: -2.8vw; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main-section__title {
     font-size: 4.5rem; }
   .main-section__btn {
@@ -336,7 +336,7 @@ button {
   .main-section__btn::after {
     top: 1.7rem; } }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .main-section__row {
     padding: 17rem 3.5rem 0 3.5rem; }
   .main-section__title {
@@ -369,13 +369,13 @@ button {
     /* or 150% */
     color: #576d81; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .features__row {
     justify-content: space-around; }
   .features__column {
     max-width: 25%; } }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .feature__title {
     font-size: 2rem; } }
 
@@ -391,10 +391,20 @@ button {
     flex: 1 0 50%;
     max-width: 50%;
     position: relative; }
+  .order__imgs::before {
+    content: "";
+    position: absolute;
+    background: url(../imgs/order-drink.png) center no-repeat;
+    background-size: cover;
+    height: 28.5rem;
+    width: 15.6rem;
+    z-index: 1;
+    left: 2.1rem;
+    top: 19rem; }
   .order__imgs::after {
     content: "";
     position: absolute;
-    background: url(../../../assets/imgs/order-chips.png) center no-repeat;
+    background: url(../imgs/order-chips.png) center no-repeat;
     background-size: cover;
     height: 11.7rem;
     width: 22.3rem;
@@ -407,12 +417,6 @@ button {
     left: 14rem;
     z-index: 2;
     max-width: 32.1vw; }
-  .order__img-drink {
-    position: absolute;
-    left: 2.1rem;
-    top: 19rem;
-    z-index: 1;
-    max-width: 15.6vw; }
   .order__content {
     flex: 1 0 50%;
     max-width: 50%;
@@ -439,27 +443,32 @@ button {
     color: #576d81;
     max-width: 414px; }
 
-@media screen and (max-width: 768px) {
-  .order__title {
-    font-size: 3.0rem; }
-  .order__img-drink {
-    left: 0;
-    top: 19rem; }
-  .order__img-phone {
-    top: 0;
-    left: 8rem; }
-  .order__imgs::after {
-    display: none; } }
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .order {
     padding-top: 10rem; }
-    .order__img-phone {
-      top: 8rem;
-      left: 6rem; }
-    .order__tagline {
-      padding-top: 12.6rem; }
     .order__title {
-      font-size: 2.8rem; }
-    .order__txt {
-      padding-bottom: 12.6rem; } }
+      font-size: 3.0rem; }
+    .order__img-drink {
+      left: 0;
+      top: 19rem; }
+    .order__img-phone {
+      top: 0;
+      left: 8rem; }
+    .order__imgs::after {
+      display: none; } }
+
+@media screen and (max-width: 575px) {
+  .order__imgs::before {
+    height: 21.5rem;
+    width: 11.6rem;
+    left: 0;
+    top: 21rem; }
+  .order__img-phone {
+    top: 8rem;
+    left: 6rem; }
+  .order__tagline {
+    padding-top: 12.6rem; }
+  .order__title {
+    font-size: 2.8rem; }
+  .order__txt {
+    padding-bottom: 12.6rem; } }
