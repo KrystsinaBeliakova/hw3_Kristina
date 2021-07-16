@@ -308,12 +308,14 @@ button {
     padding: 1.9rem 7.8rem 1.9rem 2.1rem;
     position: relative; }
   .main-section__btn::after {
-    content: url(../../../assets/imgs/vector.svg);
+    content: "";
     position: absolute;
     width: 28px;
     height: 17px;
     right: 3.7rem;
-    top: 2.14rem; }
+    top: 2.14rem;
+    background: url(../imgs/vector.svg) center no-repeat;
+    background-size: cover; }
   .main-section__img-wrap {
     flex: 1 0 50%;
     max-width: 50%;

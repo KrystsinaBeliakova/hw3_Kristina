@@ -50,12 +50,14 @@
     }
 
     &__btn::after {
-        content: url(../../../assets/imgs/vector.svg);
+        content: "";
         position: absolute;
         width: 28px;
         height: 17px;
         right: 3.7rem;
         top: 2.14rem;
+        background: url(../imgs/vector.svg) center no-repeat;
+        background-size: cover;
     }
 
     &__img-wrap {
