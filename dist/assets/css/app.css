@@ -505,9 +505,11 @@ button {
   .discounts__img-offer {
     background: #F6F7F8;
     border-radius: 8px;
-    height: 5rem; }
-  .discounts__img {
-    padding: 1rem; }
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .discounts__content {
     padding: 1.3rem 0 0 2.3rem;
     max-width: 32.6rem; }
