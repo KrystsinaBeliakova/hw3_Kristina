@@ -324,7 +324,7 @@ button {
     right: -4.8vw;
     max-width: 58.5vw; }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1169px) {
   .main-section__img {
     right: -2.8vw; } }
 
