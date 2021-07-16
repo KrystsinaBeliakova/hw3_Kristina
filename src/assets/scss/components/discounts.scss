@@ -1,0 +1,170 @@
+@import "../main/parameters";
+
+.discounts {
+    padding-top: 22rem;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        background-color: $c-light-bg;
+        max-height: 52.7rem;
+    }
+
+    &__offers {
+        flex: 1 0 50%;
+        max-width: 50%;
+    }
+
+    &__offers-one {
+        position: relative;
+        left: 17rem;
+        top: -4rem;
+    }
+
+    &__offers-two {
+        position: relative;
+        left: 21rem;
+        top: -1rem;
+    }
+
+    &__offers-three {
+        position: relative;
+        left: 17rem;
+        top: 2rem;
+    }
+
+    &__offer {
+        max-width: 45.5rem;
+        display: flex;
+        padding: 2.5rem 3.1rem 4.3rem 2.5rem;
+        background: #FFFFFF;
+        box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
+        border-radius: 8px;
+    }
+
+    &__img-offer {
+        background: #F6F7F8;
+        border-radius: 8px;
+        height: 5rem;
+    }
+
+    &__img {
+        padding: 1rem;
+    }
+
+    &__content {
+        padding: 1.3rem 0 0 2.3rem;
+        max-width: 32.6rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 1;
+        /* identical to box height, or 100% */
+        letter-spacing: 0.2px;
+        color: $c-text;
+        margin-bottom: 2.5rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        /* or 150% */
+        color: $c-text2;
+    }
+
+    &__img-wrapper {
+        flex: 1 0 50%;
+        max-width: 50%;
+        position: relative;
+    }
+
+    &__main-img {
+        position: absolute;
+        bottom: 0;
+        right: 12vw;
+        max-width: 59.2vw;
+    }
+
+}
+
+@media screen and (max-width: $lg) {
+    .discounts {
+        &__offers-one {
+            left: 3rem;
+        }
+    
+        &__offers-two {
+            left: 3rem;
+        }
+    
+        &__offers-three {
+            left: 3rem;
+        }
+
+        &__main-img {
+            right: 3vw;
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+    .discounts {
+        &__offer {
+            padding-bottom: 3.3rem;
+        }
+    
+        &__offers-one {
+            left: 1rem;
+        }
+    
+        &__offers-two {
+            left: 1rem;
+        }
+    
+        &__offers-three {
+            left: 1rem;
+        }
+    
+        &__main-img {
+            right: 1vw;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .discounts {
+        padding-top: 17rem;
+
+        &__img-offer {
+            display: none;
+        }
+
+        &__content {
+            padding: 1.3rem 0 0 0;
+            max-width: 28.6rem;
+        }
+
+        &__title {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .discounts {
+        &__offer {
+            max-width: 25.8rem;
+            padding: 2rem;
+        }
+
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__main-img {
+            right: 0;
+        }
+    }
+}

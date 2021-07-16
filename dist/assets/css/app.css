@@ -445,7 +445,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .order {
-    padding-top: 10rem; }
+    padding-top: 15rem; }
     .order__title {
       font-size: 3.0rem; }
     .order__img-drink {
@@ -472,3 +472,106 @@ button {
     font-size: 2.8rem; }
   .order__txt {
     padding-bottom: 12.6rem; } }
+
+.discounts {
+  padding-top: 22rem; }
+  .discounts__row {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F5F6;
+    max-height: 52.7rem; }
+  .discounts__offers {
+    flex: 1 0 50%;
+    max-width: 50%; }
+  .discounts__offers-one {
+    position: relative;
+    left: 17rem;
+    top: -4rem; }
+  .discounts__offers-two {
+    position: relative;
+    left: 21rem;
+    top: -1rem; }
+  .discounts__offers-three {
+    position: relative;
+    left: 17rem;
+    top: 2rem; }
+  .discounts__offer {
+    max-width: 45.5rem;
+    display: flex;
+    padding: 2.5rem 3.1rem 4.3rem 2.5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 32px rgba(15, 35, 54, 0.06);
+    border-radius: 8px; }
+  .discounts__img-offer {
+    background: #F6F7F8;
+    border-radius: 8px;
+    height: 5rem; }
+  .discounts__img {
+    padding: 1rem; }
+  .discounts__content {
+    padding: 1.3rem 0 0 2.3rem;
+    max-width: 32.6rem; }
+  .discounts__title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1;
+    /* identical to box height, or 100% */
+    letter-spacing: 0.2px;
+    color: #0f2336;
+    margin-bottom: 2.5rem; }
+  .discounts__description {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    /* or 150% */
+    color: #576d81; }
+  .discounts__img-wrapper {
+    flex: 1 0 50%;
+    max-width: 50%;
+    position: relative; }
+  .discounts__main-img {
+    position: absolute;
+    bottom: 0;
+    right: 12vw;
+    max-width: 59.2vw; }
+
+@media screen and (max-width: 1169px) {
+  .discounts__offers-one {
+    left: 3rem; }
+  .discounts__offers-two {
+    left: 3rem; }
+  .discounts__offers-three {
+    left: 3rem; }
+  .discounts__main-img {
+    right: 3vw; } }
+
+@media screen and (max-width: 1023px) {
+  .discounts__offer {
+    padding-bottom: 3.3rem; }
+  .discounts__offers-one {
+    left: 1rem; }
+  .discounts__offers-two {
+    left: 1rem; }
+  .discounts__offers-three {
+    left: 1rem; }
+  .discounts__main-img {
+    right: 1vw; } }
+
+@media screen and (max-width: 767px) {
+  .discounts {
+    padding-top: 17rem; }
+    .discounts__img-offer {
+      display: none; }
+    .discounts__content {
+      padding: 1.3rem 0 0 0;
+      max-width: 28.6rem; }
+    .discounts__title {
+      font-size: 2rem; } }
+
+@media screen and (max-width: 575px) {
+  .discounts__offer {
+    max-width: 25.8rem;
+    padding: 2rem; }
+  .discounts__title {
+    font-size: 2rem; }
+  .discounts__main-img {
+    right: 0; } }
