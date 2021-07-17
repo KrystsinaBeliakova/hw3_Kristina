@@ -5,19 +5,19 @@
 
     &__row {
         display: flex;
-        justify-content: space-between;
-        padding: 0 5.65rem;
+        margin: 0 -1.5rem;
+        flex-wrap: wrap;
     }
 
     &__column {
-        max-width: 33.33%;
+        flex: 1 0 33.3333%;
+        max-width: 33.3333%;
+        padding: 0 1.5rem;
     }
 
 }
 
 .feature {
-    max-width: 296px;
-
     &__img {
         margin-bottom: 2.9rem;
     }
@@ -43,12 +43,10 @@
 
 @media screen and (max-width: $md) {
     .features {
-        &__row {
-            justify-content: space-around;
-        }
-
         &__column {
-            max-width: 25%;
+            max-width: 50%;
+            flex: 1 0 50%;
+            margin: 0 0 4rem;
         }
     }
 }

@@ -288,7 +288,7 @@ button {
     line-height: 1.38;
     color: #0f2336;
     letter-spacing: 0.02em;
-    margin-bottom: 6.9rem; }
+    margin-bottom: 5.0rem; }
     .main-section__title .primary {
       color: #00cccc;
       display: block; }
@@ -306,7 +306,8 @@ button {
     /* identical to box height, or 120% */
     color: #0f2336;
     padding: 1.9rem 7.8rem 1.9rem 2.1rem;
-    position: relative; }
+    position: relative;
+    display: inline-block; }
   .main-section__btn::after {
     content: "";
     position: absolute;
@@ -348,87 +349,90 @@ button {
   padding-top: 10rem; }
   .features__row {
     display: flex;
-    justify-content: space-between;
-    padding: 0 5.65rem; }
+    margin: 0 -1.5rem;
+    flex-wrap: wrap; }
   .features__column {
-    max-width: 33.33%; }
+    flex: 1 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 0 1.5rem; }
 
-.feature {
-  max-width: 296px; }
-  .feature__img {
-    margin-bottom: 2.9rem; }
-  .feature__title {
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 1.3;
-    /* identical to box height, or 130% */
-    letter-spacing: 0.2px;
-    color: #0f2336;
-    margin-bottom: 1.2rem; }
-  .feature__description {
-    font-size: 1.6rem;
-    line-height: 1.5;
-    /* or 150% */
-    color: #576d81; }
+.feature__img {
+  margin-bottom: 2.9rem; }
+
+.feature__title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  /* identical to box height, or 130% */
+  letter-spacing: 0.2px;
+  color: #0f2336;
+  margin-bottom: 1.2rem; }
+
+.feature__description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  /* or 150% */
+  color: #576d81; }
 
 @media screen and (max-width: 1023px) {
-  .features__row {
-    justify-content: space-around; }
   .features__column {
-    max-width: 25%; } }
+    max-width: 50%;
+    flex: 1 0 50%;
+    margin: 0 0 4rem; } }
 
 @media screen and (max-width: 575px) {
   .feature__title {
     font-size: 2rem; } }
 
 .order {
-  padding-top: 15.8rem; }
+  padding-top: 15.8rem;
+  margin-bottom: 22rem; }
   .order__row {
     display: flex;
     background: #F4F5F6;
     border-radius: 50px;
-    max-height: 540px;
     max-width: 1140px; }
   .order__imgs {
     flex: 1 0 50%;
     max-width: 50%;
-    position: relative; }
-  .order__imgs::before {
-    content: "";
-    position: absolute;
-    background: url(../imgs/order-drink.png) center no-repeat;
-    background-size: cover;
-    height: 28.5rem;
-    width: 15.6rem;
-    z-index: 1;
-    left: 2.1rem;
-    top: 19rem; }
-  .order__imgs::after {
-    content: "";
-    position: absolute;
-    background: url(../imgs/order-chips.png) center no-repeat;
-    background-size: cover;
-    height: 11.7rem;
-    width: 22.3rem;
-    z-index: 3;
-    left: 37rem;
-    top: 48.2rem; }
+    text-align: center; }
+  .order__imgs-inner {
+    display: inline-block;
+    position: relative;
+    max-width: 100%; }
+    .order__imgs-inner::before {
+      content: "";
+      position: absolute;
+      background: url(../imgs/order-drink.png) center no-repeat;
+      background-size: cover;
+      height: 28.5rem;
+      width: 15.6rem;
+      z-index: 1;
+      left: -11.9rem;
+      top: 19rem; }
+    .order__imgs-inner::after {
+      content: "";
+      position: absolute;
+      background: url(../imgs/order-chips.png) center no-repeat;
+      background-size: cover;
+      height: 11.7rem;
+      width: 22.3rem;
+      z-index: 3;
+      right: -10rem;
+      bottom: -9rem; }
   .order__img-phone {
     position: relative;
-    top: -5rem;
-    left: 14rem;
     z-index: 2;
-    max-width: 32.1vw; }
+    margin: -5rem 0; }
   .order__content {
     flex: 1 0 50%;
     max-width: 50%;
-    max-height: 540px; }
+    padding-top: 11.6rem; }
   .order__tagline {
     font-size: 1.8rem;
     line-height: 1;
     /* identical to box height, or 100% */
     color: #576d81;
-    padding-top: 11.6rem;
     margin-bottom: 2.2rem; }
   .order__title {
     font-weight: 900;
@@ -476,12 +480,11 @@ button {
     padding-bottom: 12.6rem; } }
 
 .discounts {
-  padding-top: 22rem; }
+  background-color: #F4F5F6; }
   .discounts__row {
     display: flex;
     justify-content: space-between;
-    background-color: #F4F5F6;
-    max-height: 52.7rem; }
+    flex-wrap: wrap; }
   .discounts__offers {
     flex: 1 0 50%;
     max-width: 50%; }

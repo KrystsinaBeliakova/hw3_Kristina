@@ -1,13 +1,13 @@
 @import "../main/parameters";
 
 .discounts {
-    padding-top: 22rem;
+    background-color: $c-light-bg;
 
     &__row {
         display: flex;
         justify-content: space-between;
-        background-color: $c-light-bg;
-        max-height: 52.7rem;
+        // background-color: $c-light-bg;
+        flex-wrap: wrap;
     }
 
     &__offers {

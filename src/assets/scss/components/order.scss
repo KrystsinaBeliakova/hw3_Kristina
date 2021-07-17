@@ -2,51 +2,55 @@
 
 .order {
     padding-top: 15.8rem;
+    margin-bottom: 22rem;
 
     &__row {
         display: flex;
         background: $c-light-bg;
         border-radius: 50px;
-        max-height: 540px;
         max-width: 1140px;
     }
 
     &__imgs {
         flex: 1 0 50%;
         max-width: 50%;
+        text-align: center;
+    }
+
+    &__imgs-inner {
+        display: inline-block;
         position: relative;
-    }
+        max-width: 100%;
 
-    &__imgs::before {
-        content: "";
-        position: absolute;
-        background: url(../imgs/order-drink.png) center no-repeat;
-        background-size: cover;
-        height: 28.5rem;
-        width: 15.6rem;
-        z-index: 1;
-        left: 2.1rem;
-        top: 19rem;
-    }
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../imgs/order-drink.png) center no-repeat;
+            background-size: cover;
+            height: 28.5rem;
+            width: 15.6rem;
+            z-index: 1;
+            left: -11.9rem;
+            top: 19rem;
+        }
 
-    &__imgs::after {
-        content: "";
-        position: absolute;
-        background: url(../imgs/order-chips.png) center no-repeat;
-        background-size: cover;
-        height: 11.7rem;
-        width: 22.3rem;
-        z-index: 3;
-        left: 37rem;
-        top: 48.2rem;
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(../imgs/order-chips.png) center no-repeat;
+            background-size: cover;
+            height: 11.7rem;
+            width: 22.3rem;
+            z-index: 3;
+            right: -10rem;
+            bottom: -9rem;
+        }
     }
 
     &__img-phone {
         position: relative;
-        top: -5rem;
-        left: 14rem;
         z-index: 2;
-        max-width: 32.1vw;
+        margin: -5rem 0;
     }
 
     // &__img-chips {
@@ -69,7 +73,7 @@
     &__content {
         flex: 1 0 50%;
         max-width: 50%;
-        max-height: 540px;
+        padding-top: 11.6rem;
     }
 
     &__tagline {
@@ -77,7 +81,6 @@
         line-height: 1;
         /* identical to box height, or 100% */
         color: $c-text2;
-        padding-top: 11.6rem;
         margin-bottom: 2.2rem;
     }
 

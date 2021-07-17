@@ -1,26 +1,27 @@
-container.discounts__row 
-    .discounts__offers
-        .discounts__offers-one
-            .discounts__offer
-                .discounts__img-offer
-                    img.discounts__img(src="./assets/imgs/discount1.svg", alt="discount")
-                div.discounts__content
-                    h2.discounts__title Loyalty Points
-                    p.discounts__description Collect points on each store and redeem them to change for Teas.
-        .discounts__offers-two
-            .discounts__offer
-                .discounts__img-offer
-                    img.discounts__img(src="./assets/imgs/discount2.svg", alt="discount")
-                div.discounts__content
-                    h2.discounts__title Exclusive Store Discounts
-                    p.discounts__description You can enjoy lots of discounts from the selected stores near you.
-        .discounts__offers-three
-            .discounts__offer
-                .discounts__img-offer
-                    img.discounts__img(src="./assets/imgs/discount3.svg", alt="discount")
-                div.discounts__content
-                    h2.discounts__title T.Pass Free Drinks
-                    p.discounts__description 2 Teas for $5.99 each month and you can carry them over to the next month.
+div.discounts
+    .discounts__row 
+        .discounts__offers
+            .discounts__offers-one
+                .discounts__offer
+                    .discounts__img-offer
+                        img.discounts__img(src="./assets/imgs/discount1.svg", alt="discount")
+                    div.discounts__content
+                        h2.discounts__title Loyalty Points
+                        p.discounts__description Collect points on each store and redeem them to change for Teas.
+            .discounts__offers-two
+                .discounts__offer
+                    .discounts__img-offer
+                        img.discounts__img(src="./assets/imgs/discount2.svg", alt="discount")
+                    div.discounts__content
+                        h2.discounts__title Exclusive Store Discounts
+                        p.discounts__description You can enjoy lots of discounts from the selected stores near you.
+            .discounts__offers-three
+                .discounts__offer
+                    .discounts__img-offer
+                        img.discounts__img(src="./assets/imgs/discount3.svg", alt="discount")
+                    div.discounts__content
+                        h2.discounts__title T.Pass Free Drinks
+                        p.discounts__description 2 Teas for $5.99 each month and you can carry them over to the next month.
                 //- mixin offer(img, title, description)
                 //-     img.discounts__img(src=img, alt="")
                 //-     div.discounts__content
@@ -29,5 +30,5 @@ container.discounts__row
                 //- +offer("./assets/imgs/discount1.svg", "Loyalty Points", "Collect points on each store and redeem them to change for Teas.")
                 //- +offer("./assets/imgs/discount2.svg", "Exclusive Store Discounts", "You can enjoy lots of discounts from the selected stores near you.")
                 //- +offer("./assets/imgs/discount3.svg", "T.Pass Free Drinks", "2 Teas for $5.99 each month and you can carry them over to the next month.")
-    .discounts__img-wrapper
-        img.discounts__main-img(src="./assets/imgs/discounts.png", alt="discounts")
+        .discounts__img-wrapper
+            img.discounts__main-img(src="./assets/imgs/discounts.png", alt="discounts")
